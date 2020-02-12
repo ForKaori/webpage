@@ -1,0 +1,14 @@
+h1{
+	color: darkblue;
+}
+
+body{
+	background: url(https://cdn.dribbble.com/users/5031/screenshots/3713646/attachments/832536/wallpaper_mikael_gustafsson.png);
+	background-size: cover;
+}
+
+
+#content{
+	text-align: center;
+	padding-top: 25%;
+}
