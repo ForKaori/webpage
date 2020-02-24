@@ -6,7 +6,7 @@ toggleButton.addEventListener("click", function(){
     if (isToggled){
         document.querySelector("#content h1").innerHTML = "black";
     } else {
-        document.querySelector("#content h1").innerHTML = "purple";
+        document.querySelector("#content h1").innerHTML = "orange";
     }
     isToggled = !isToggled
 })
