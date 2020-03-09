@@ -17,6 +17,48 @@ html{
 				 0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
+#content-about{
+	text-align: left;
+	padding-top: 50px;
+}
+
+#personal-statement{
+	margin-top: 100px;
+	margin-right: 160px;
+	margin-left: 160px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+				 0px 8px 13px rgba(0, 0, 0, 0.1),
+				 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+#other-things{
+	margin-top: 100px;
+	margin-right: 160px;
+	margin-left: 160px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+				 0px 8px 13px rgba(0, 0, 0, 0.1),
+				 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+#bilibili{
+	color: lightgray;
+}
+
+#pixiv{
+	color: lightgray;
+}
+
+
+.nav-item{
+	font-size: 19px;
+}
+
 h1{
 	font-weight: 700;
 	font-size: 4.5em;
@@ -190,121 +232,3 @@ a.fa.fa-dribbble.icon.icon-border.dribbble:hover {
 	-ms-box-shadow: inset 0 0 0 4px #ec4a89;
 	box-shadow: inset 0 0 0 4px #ec4a89;
 } 
-/* rss */
-.icon-border.rss::before {
-	-webkit-box-shadow: inset 0 0 0 48px #ee802f;
-	-moz-box-shadow: inset 0 0 0 48px #ee802f;
-	-o-box-shadow: inset 0 0 0 48px #ee802f;
-	-ms-box-shadow: inset 0 0 0 48px #ee802f;
-	box-shadow: inset 0 0 0 48px #ee802f;
-} 
-.icon-border.rss:hover::before {
-	-webkit-box-shadow: inset 0 0 0 4px #ee802f;
-	-moz-box-shadow: inset 0 0 0 4px #ee802f;
-	-o-box-shadow: inset 0 0 0 4px #ee802f;
-	-ms-box-shadow: inset 0 0 0 4px #ee802f;
-	box-shadow: inset 0 0 0 4px #ee802f;
-} 
-/*-- social-icons --*/
-/*-- slider-up-arrow --*/
-#toTop {
-	display: none;
-	text-decoration: none;
-	position: fixed;
-	bottom: 3%;
-	right: 3%;
-	overflow: hidden;
-	width: 32px;
-	height: 32px;
-	border: none;
-	text-indent: 100%;
-	background: url("../images/move-up.png") no-repeat 0px 0px;
-}
-#toTopHover {
-	width: 32px;
-	height: 32px;
-	display: block;
-	overflow: hidden;
-	float: right;
-	opacity: 0;
-	-moz-opacity: 0;
-	filter: alpha(opacity=0);
-}
-
-  
-
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
-
-$timing        : 265ms;
-$iconColor     : #00B5F5;
-$accent        : #002A8F;
-$bluefade      : #0043E0;
-$gradient      : #00B5F5;
-
-@mixin transformScale($size: 1) {
-    transform: scale($size);
-    -ms-transform: scale($size);
-    -webkit-transform: scale($size);
-}
-
-body {
-    background-color: rgba($iconColor, 0.05);
-}
-
-.social-container {
-    width: 400px;
-    margin: 40vh auto;
-    text-align: center;
-}
-
-.social-icons {
-    padding: 0;
-    list-style: none;
-    margin: 1em;
-  
-    li {
-        display: inline-block;
-        margin: 0.15em;
-        position: relative;
-        font-size: 1.2em;
-
-    }
-
-    i {
-        color: #fff;
-        position: absolute;
-        top: 21px;
-        left: 21px;
-        transition: all $timing ease-out;
-    }
-
-    a {
-        display: inline-block;
-      
-        &:before {
-            @include transformScale();
-            content: " ";
-            width: 60px;
-            height: 60px;
-            border-radius: 100%;
-            display: block;
-            background: linear-gradient(45deg, $iconColor, $accent);
-            transition: all $timing ease-out;
-        }
-        
-        &:hover:before {
-            transform: scale(0);
-            transition: all $timing ease-in;
-        }
-        
-        &:hover i {
-            @include transformScale(2.2);
-            color: $iconColor;
-            background: -webkit-linear-gradient(45deg, $iconColor, $accent);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            transition: all $timing ease-in;
-        }
-    }
-  
-}
